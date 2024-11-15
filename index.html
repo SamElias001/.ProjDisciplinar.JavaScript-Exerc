@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercícios de Lógica de Programação</h1>  
+    <!-- EXEMPLO -->
+    <section>
+        <h2>Exemplo - Tabuada apenas de multiplicadores pares</h2>
+        <p>Digite um número inteiro para verificar a tabuada</p>
+        <input id="inputNumero" type="number" placeholder="Digite um número">
+        <button id="btnTabuada" onclick="gerarTabuadaPar()">Gerar Tabuada</button>
+        <p id="resultadoTabuada"></p>
+
+    </section>
+        <!-- Exercício 1 -->
+        <section>
+            <h2>1. Verificação de Par ou Ímpar</h2>
+            <p>Digite um número inteiro para verificar se é par ou ímpar.</p>
+            <input id="numParImpar" type="number" placeholder="Digite um número">
+            <button onclick="verificarParImpar()">Verificar</button>
+            <p id="resultadoParImpar"></p>
+        </section>
+      
+
+        <!-- Exercício 2 -->
+        <section>
+            <h2>2. Calculadora de Média</h2>
+            <p>Digite as notas de 3 provas para calcular a média</p>
+            <p>- Se media menor que 7 = Reprovado.</p>
+            <p>- Se media maior ou igual a 7 = Aprovado.</p>
+            <input id="nota1" type="number" placeholder="Nota 1">
+            <input id="nota2" type="number" placeholder="Nota 2">
+            <input id="nota3" type="number" placeholder="Nota 3">
+            <button onclick="calcularMedia()">Calcular Média</button>
+            <p id="resultadoMedia"></p>
+        </section>
+        
+
+        <!-- Exercício 3 -->
+        <section>
+            <h2>3. Soma dos Números Pares</h2>
+            <p>Digite um número inteiro positivo para somar todos os pares até ele.</p>
+            <input id="numSomaPares" type="number" placeholder="Digite um número">
+            <button onclick="somarPares()">Somar</button>
+            <p id="resultadoSomaPares"></p>
+        </section>
+        
+
+        <!-- Exercício 4 -->
+        <section>
+            <h2>4. Validação de Login e Senha</h2>
+            <p>Digite o usuário e senha. O usuário deve ser "admin" e a senha "1234".</p>
+            <input id="username" type="text" placeholder="Usuário">
+            <input id="password" type="password" placeholder="Senha">
+            <button onclick="validarLogin()">Validar</button>
+            <p id="resultadoLogin"></p>
+        </section>
+        
+
+        <!-- Exercício 5 -->
+        <section>
+            <h2>5. Calculadora de Fatorial</h2>
+            <p>Digite um número inteiro para calcular o seu fatorial.</p>
+            <input id="numFatorial" type="number" placeholder="Digite um número">
+            <button onclick="calcularFatorial()">Calcular</button>
+            <p id="resultadoFatorial"></p>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>

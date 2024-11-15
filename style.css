@@ -1,0 +1,72 @@
+/* ===== Estilos Globais ===== */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, com fallback para qualquer fonte sans-serif */
+    margin: 0; /* Remove as margens padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    background-color: #f9f9f9; /* Define um fundo cinza claro para toda a página */
+    display: flex; /* Configura o layout do body como flexbox */
+    flex-direction: column; /* Organiza os filhos do body em uma coluna vertical */
+    align-items: center; /* Alinha os elementos filhos ao centro horizontalmente */
+    gap: 20px; /* Adiciona um espaço de 20px entre os elementos filhos */
+    padding: 20px; /* Adiciona um espaçamento interno ao body */
+}
+
+/* ===== Estilo para o Título Principal ===== */
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+    margin: 20px 0; /* Adiciona margens superior e inferior ao título */
+}
+
+/* ===== Estilo para Seções ===== */
+section {
+    background-color: #fff; /* Define o fundo das seções como branco */
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara ao redor das seções */
+    padding: 20px; /* Adiciona espaçamento interno às seções */
+    width: 80%; /* Define a largura das seções como 80% da largura total */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar as seções */
+    border-radius: 8px; /* Arredonda os cantos da borda em 8px */
+}
+
+/* ===== Estilo para Títulos Secundários ===== */
+section h2 {
+    margin: 0 0 10px; /* Remove margens superiores e adiciona 10px de margem inferior */
+}
+
+/* ===== Estilo para Campos de Entrada ===== */
+input {
+    margin: 5px; /* Adiciona um espaçamento ao redor do campo de entrada */
+    padding: 10px; /* Adiciona preenchimento interno ao campo de entrada */
+    width: calc(100% - 22px); /* Calcula a largura total menos as margens e preenchimentos */
+    max-width: 300px; /* Define a largura máxima como 300px */
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara ao campo */
+    border-radius: 4px; /* Arredonda os cantos da borda em 4px */
+}
+
+/* ===== Estilo para Botões ===== */
+button {
+    padding: 10px 20px; /* Define preenchimento interno (10px em cima/baixo e 20px nas laterais) */
+    background-color: #007bff; /* Define a cor de fundo do botão como azul */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão em 4px */
+    cursor: pointer; /* Altera o cursor para "mãozinha" ao passar o mouse sobre o botão */
+}
+
+/* Estilo para botões ao passar o mouse */
+button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo para um tom mais escuro de azul */
+}
+
+/* ===== Estilo para Linha Horizontal ===== */
+hr {
+    border: 0; /* Remove as bordas padrão da linha horizontal */
+    height: 1px; /* Define a altura da linha horizontal como 1px */
+    background: #ddd; /* Define a cor de fundo da linha como cinza claro */
+    width: 80%; /* Define a largura da linha como 80% da página */
+}
+
+/* ===== Estilo para Parágrafos ===== */
+p {
+    margin: 10px 0 0; /* Remove margens superiores e adiciona 10px de margem inferior */
+    color: #333; /* Define a cor do texto como cinza escuro */
+}
