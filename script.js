@@ -35,16 +35,22 @@ function verificarParImpar() {
         return;
     }
 
-    let par = `O número ${numero} é Par`;
-    let impar = `O número ${numero} é Impár`;
+    //Forma Ternário
+    const resultado = numero % 2 === 0 ? "Par" : "Impar";
 
-    if (numero % 2 === 0) {
-        resultadoElemento.innerText = par;
-    }
-    else
-    {
-        resultadoElemento.innerText = impar;
-    }
+    resultadoElemento.innerText = `O número ${numero} é ` + resultado;
+
+    //Forma Originalmente feita:
+//    let par = `O número ${numero} é Par`;
+//    let impar = `O número ${numero} é Impár`;
+//
+//    if (numero % 2 === 0) {
+//        resultadoElemento.innerText = par;
+//    }
+//    else
+//    {
+//        resultadoElemento.innerText = impar;
+//    }
 }
 
 function calcularMedia() {
@@ -132,6 +138,40 @@ function calcularFatorial() {
     }
 
     resultadoFatorial.innerText = `O valor fatorial de ${numFatorial} é ${soma}`;
+}
+
+function categorizarIdade() {
+    const idade = parseInt(document.getElementById("inputIdade").value);
+    const resultadoIdade = (document.getElementById("resultadoIdade"));
+
+    resultadoIdade.innerText = `Uma pessoa com idade de ${idade} está categorizada`; //FALTANDO COISA AQUI
+}
+
+function calcular() {
+    const numFormula = parseInt(document.getElementById("numFormula").value);
+    const numCalcu1 = parseInt(document.getElementById("numCalcu1").value);
+    const numCalcu2 = parseInt(document.getElementById("numCalcu2").value);
+    const resultadoCalculadora = (document.getElementById("resultadoCalculadora"));
+
+    let resultadoCalcu = 0;
+
+    if (numFormula === 1) {
+        resultadoCalcu = numCalcu1 + numCalcu2;
+    }
+    else if(numFormula === 2) {
+        resultadoCalcu = numCalcu1 - numCalcu2;
+    }
+    else if (numFormula === 3) {
+        resultadoCalcu = numCalcu1 / numCalcu2;
+    }
+    else if (numFormula === 4) {
+        resultadoCalcu = numCalcu1 * numCalcu2;
+    }
+    else {
+        resultadoCalcu = "Número incorreto, por favor digite um número valido";
+    }
+
+    resultadoCalculadora.innerText = `O resultado foi: ${resultadoCalcu}`;
 }
 
 
